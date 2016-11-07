@@ -1,0 +1,25 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+    id 'application'
+}
+
+group = "amber.sienna"
+version = "1.0.8"
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.10'
+    compile group: 'org.spigotmc', name: 'spigot-api', version: '1.8.8-R0.1-SNAPSHOT'
+    testCompile 'junit:junit:4.12'
+}
+
+//noinspection GroovyUnusedAssignment
+mainClassName = 'amber.sienna.main.Main'
+compileJava.options.encoding = 'UTF-8'

@@ -1,0 +1,10 @@
+name: Roleplay
+version: 1.0.8
+main: amber.sienna.main.Main
+description: A roleplay plugin used for creative roleplaying.
+author: Amber Sienna
+
+commands:
+    roleplay:
+        description: The main command in this plugin.
+        aliases: [rp]
